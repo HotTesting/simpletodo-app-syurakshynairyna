@@ -31,12 +31,12 @@ describe('TODO site', function () {
    })
 
    it('should delete all requested notes', function () {
-    browser.get(URL)
-    for (let i = 1; i <= 7; i++ ) {
+      browser.get(URL)
+      for (let i = 1; i <= 7; i++ ) {
 
-     let checkbox = $(‘input.enter-todo’) body > app > todo-list > div > div:nth-child(1) > todo-list-render > div > input[type=”checkbox”]’)
-    checkbox.click();
-    browser.sleep(50)
+      let checkbox = $(‘input.enter-todo’) body > app > todo-list > div > div:nth-child(1) > todo-list-render > div > input[type=”checkbox”]’)
+      checkbox.click();
+      browser.sleep(50)
 
        expect(notes.getText()).not.toContain('Buy weimaraner', 'Travel to Tokyo', 'Get to know Doctor Strange');
        expect(notes.isDisplayed()).toBe(false);
