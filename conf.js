@@ -1,5 +1,5 @@
-exports.config = {
-   framework: 'jasmine',
-   seleniumAddress: 'http://localhost:4444/wd/hub',
-   specs: ['homework.js']
-};
+module.exports.config = {
+  useAllAngular2AppRoots: true,
+  specs: ['spec.js', 'homework.js'],
+  directConnect: true
+}
