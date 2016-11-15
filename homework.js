@@ -26,7 +26,7 @@ describe('TODO site', function () {
 
        let notes = $$('todo-list .small-12')
 
-       //expect(notes.getText()).not.toContain('New Shiny note')expect(notes.g
+       //expect(notes.getText()).not.toContain('New Shiny note')
        expect(notes.getText()).toContain('Buy weimaraner', 'Travel to Tokyo', 'Get to know Doctor Strange')
    })
 
