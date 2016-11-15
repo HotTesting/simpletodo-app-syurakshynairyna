@@ -34,14 +34,13 @@ describe('TODO site', function () {
       browser.get(URL)
       for (let i = 1; i <= 3; i++ ) {
 
-      let checkbox = $(‘input.enter-todo’) body > app > todo-list > div > div:nth-child(1) > todo-list-render > div > input[type=”checkbox”]’)
+      let checkbox = $('input[type=”checkbox"]');
       checkbox.click();
       browser.sleep(5000)
-
+      }
        expect(notes.getText()).not.toContain('Buy weimaraner', 'Travel to Tokyo', 'Get to know Doctor Strange');
-       expect(notes.isDisplayed()).toBe(false);
-
-   }
-    )
+       //expect(notes.isDisplayed()).toBe(false);
+      
+   })
 
 })
